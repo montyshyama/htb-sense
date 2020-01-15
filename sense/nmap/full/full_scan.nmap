@@ -1,0 +1,18 @@
+# Nmap 7.70 scan initiated Wed Jan 15 09:25:48 2020 as: nmap -sC -sV -sT -oA full/full_scan -vvvvvvvvvvvvvvv 10.10.10.60
+Nmap scan report for 10.10.10.60
+Host is up, received echo-reply ttl 63 (0.35s latency).
+Scanned at 2020-01-15 09:25:48 IST for 145s
+Not shown: 998 filtered ports
+Reason: 998 no-responses
+PORT    STATE SERVICE    REASON  VERSION
+80/tcp  open  http       syn-ack lighttpd 1.4.35
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: lighttpd/1.4.35
+|_http-title: Did not follow redirect to https://10.10.10.60/
+443/tcp open  ssl/https? syn-ack
+|_ssl-date: TLS randomness does not represent time
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jan 15 09:28:13 2020 -- 1 IP address (1 host up) scanned in 144.83 seconds
